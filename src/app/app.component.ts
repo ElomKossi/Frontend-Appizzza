@@ -7,5 +7,5 @@ import { Pizza } from './pizza';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+  title = 'Pizza Shop';
 }

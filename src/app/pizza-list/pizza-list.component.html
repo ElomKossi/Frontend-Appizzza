@@ -1,1 +1,4 @@
-<app-pizza [pizza]="pizza" *ngFor="let pizza of pizzaParent" ></app-pizza>
+<h2 class="h2">Liste des pizzas disponibles</h2>
+<div class="row pizza-list align-content-lg-center">
+    <app-pizza [pizza]="pizza" *ngFor="let pizza of pizzaParent" ></app-pizza>
+</div>
