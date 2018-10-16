@@ -1,31 +1,31 @@
 <div class="det-titre">
-    <hr>
-    <h2>Détails sur la Pizza</h2>
-  </div>
-  <div class="row detail">
-      <div class="col-4">
-        <div class="card affiche-detail">
-          <img src="{{pizza.url}}" class="card-img-top" alt="image de la pizza">
-          <div class="card-body">
-            <h2>{{pizza.name | uppercase}}</h2>
-            <p>Prix: {{pizza.price}} €</p>
-            <a class="card-link btn btn-success">Commander</a>
-            <a class="card-link btn btn-danger" href="../pizzas">Retour</a>
-          </div>
-        </div>
-      </div>
-      <div class="col shadow-lg mx-5">
-        <h3> Description</h3>
-        <p>Ils ne nous passent pas dans leurs radios, non
-            They know qu'on va pirater l'antenne, tout est écrit dans l'ciel
-            Si j'te tue pas, j'espère qu'tu mourras, de mort accidentelle
-            Je vous présente ma Colombienne
-            Toute pleine de collagène, baby
-            Elle vient d'atterrir d'Carthagène
-            Au lit, c'est super, le reste du temps, j'suis au phone-tel'
-            Qu'est c'que j'vais faire d'elle ? J'la connais ni d'Adam, ni d'Eve
-            Me parle pas de "sang de la veine", j'vais la faire déposer en Uber
-            J'vais la faire déposer en Uber aux portes de l'Enfer
-          </p>
+  <hr>
+  <h2>Détails sur la Pizza</h2>
+</div>
+<div class="row detail">
+  <div class="col-4">
+    <div class="card affiche-detail">
+      <img src="{{pizza.url}}" class="card-img-top" alt="image de la pizza">
+      <div class="card-body">
+        <h2>{{pizza.name | uppercase}}</h2>
+        <p>Prix: {{pizza.price}} €</p>
+        <a class="card-link btn btn-success">Commander</a>
+        <a class="card-link btn btn-danger" (click)="goBack()">Retour</a>
       </div>
     </div>
+  </div>
+  <div class="col shadow-lg mx-5">
+    <h3> Description</h3>
+    <p>Ils ne nous passent pas dans leurs radios, non
+        They know qu'on va pirater l'antenne, tout est écrit dans l'ciel
+        Si j'te tue pas, j'espère qu'tu mourras, de mort accidentelle
+        Je vous présente ma Colombienne
+        Toute pleine de collagène, baby
+        Elle vient d'atterrir d'Carthagène
+        Au lit, c'est super, le reste du temps, j'suis au phone-tel'
+        Qu'est c'que j'vais faire d'elle ? J'la connais ni d'Adam, ni d'Eve
+        Me parle pas de "sang de la veine", j'vais la faire déposer en Uber
+        J'vais la faire déposer en Uber aux portes de l'Enfer
+      </p>
+  </div>
+</div>

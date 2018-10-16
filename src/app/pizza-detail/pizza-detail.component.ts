@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Pizza } from '../pizza';
 import { PizzaService } from '../pizza.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-pizza-detail',
@@ -14,7 +15,8 @@ export class PizzaDetailComponent implements OnInit {
 
   constructor( 
     private Route: ActivatedRoute,
-    private pizzaService: PizzaService
+    private pizzaService: PizzaService,
+    private location: Location
   ) { }
 
   ngOnInit() {
@@ -25,6 +27,10 @@ export class PizzaDetailComponent implements OnInit {
     const idUrl = +this.Route.snapshot.paramMap.get('id');
     this.pizzaService.getPizza(idUrl)
         .subscribe(pizza => this.pizza = pizza);
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
 }
